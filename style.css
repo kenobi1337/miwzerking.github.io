@@ -1,0 +1,277 @@
+
+body {
+    background-color: beige;
+}
+table {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+th {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    color: green;
+    text-align: center;
+}
+td {
+    font-size: 18px;
+    background-color:
+    #f4f5f0;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+td .grey {
+    font-size: 18px;
+    background-color: white;
+    color: grey;
+    text-align: center;
+    padding: 10px;
+}
+.credit {
+    margin-left: 475px;
+    margin-top: 80px;
+}
+.red {
+    color: red;
+    font-weight: bold;
+}
+.green {
+    color: green;
+    font-weight: bold;
+}
+.grey {
+    background-color: #d3d3d3;
+}
+.earth {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+img {
+    height: 30px;
+    width: 50px;
+}
+.border {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    width: 420px;
+    color: white;
+    text-align: center;
+    height: 870px;
+    margin-right: 1px
+}
+.stat {
+    background-image: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.9));
+    width: 800px;
+}
+.latest-report {
+    display: flex;
+    width: 80%;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.country, .total-case, .recovered, .deaths {
+    height: 100px;
+}
+.name {
+    font-size: 2.2em;
+    color: blueviolet;
+    font-weight: bold;
+}
+.change-country {
+    cursor: pointer;
+}
+.title {
+    font-size: 1.3em
+}
+.total-case .value {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: yellow;
+}
+.recovered .value {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: green;
+}
+.deaths .value {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: red;
+}
+.new-value {
+    font-size: 1.3em;
+}
+.chart {
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.main {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.search-country {
+    position: relative;
+    top: 10px;
+}
+.search-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+    background-color: #111;
+    z-index: 1;
+}
+.search-box input {
+    width: 360px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 15px;
+    font-size: 1em;
+}
+.search-box img {
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+/* width */
+.country-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .country-list::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  /* Handle */
+  .country-list::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  
+  /* Handle on hover */
+  .country-list::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+.country-list {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: scroll;
+}
+.country-list ul {
+    width: 100%;
+}
+.country-list ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+.country-list ul li:hover {
+    border-left: 1px solid white;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .latest-report {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.left-col {
+    float: left;
+}
+.center-col {
+    float: left;
+    width: 74%;
+}
+#map {
+    position: relative;
+    width: 100%;
+    top: 5px;
+    height: 870px;
+}
+.blue {
+    color: blue;
+}
+nav {
+
+    margin: 0px;
+    z-index: 2;
+    width: 100%;
+}
+#corona-icon {
+    width: 70px;
+    height: 70px;
+}
+.header-nav {
+    position: relative;
+    font-family: cursive;
+    font-size: 20px;
+    color: black;
+    bottom: 27px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    margin-right: 35px;
+}
+.nav:hover {
+    background-color: black;
+    color: white;
+}
+@media  screen and (max-width: 1000px) {
+    .left-col {
+        float: left;
+        width: 50%;
+    }
+    .center-col {
+        width: 100%;
+    }
+    #map {
+        position: relative;
+        float: right;
+        width: 49%;
+        z-index: 7;
+    }
+    table {
+        display: none;
+    }
+    .nav {
+        font-size: 20px;
+    }
+    .header-nav {
+        font-size: 15px;
+    }
+}
