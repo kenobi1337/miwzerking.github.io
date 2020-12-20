@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(morgan('dev'));
 //app.use(helmet());
-app.use(cors());
+//app.use(cors());
 
 
 app.use(express.static('public'));
